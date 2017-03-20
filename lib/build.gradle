@@ -1,0 +1,12 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.8.Final'
+//    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+targetCompatibility = '1.7'
+sourceCompatibility = '1.7'
