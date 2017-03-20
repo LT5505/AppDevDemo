@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.liuting.drawcircle.MainActivity">
+
+    <!--绘图-->
+    <Button
+        android:id="@+id/main_btn_draw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/draw_random_circle"
+        android:textAllCaps="false"
+        android:onClick="onClick_DrawRandomCircle"
+        />
+
+    <!--清除绘图-->
+    <Button
+        android:id="@+id/main_btn_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
+        android:textAllCaps="false"
+        android:onClick="onClick_Clear"/>
+
+</LinearLayout>

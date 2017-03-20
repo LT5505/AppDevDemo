@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/vertical_padding">
+
+    <!--自定义带边框的TextView-->
+    <com.liuting.textexample.widget.BorderTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/vertical_padding"
+        android:layout_marginTop="@dimen/large_margin"
+        android:text="@string/the_border_textview"/>
+
+    <!--使用.9图片背景来设置带边框的TextView-->
+    <!--布局中使用lineSpacingExtra设置精确的行间距，lineSpacingMultiplier设置
+    默认间距的倍数，如果同时设置这两个属性，则以较大行间距为准
+    Java中使用setLineSpacing方法设置行间距，两个参数都是float类型，第一个参数相当于
+    lineSpacingMultiplier，第二个参数相当于lineSpacingMultiplier，最终以哪个参数值
+    所表示的行间距大为准-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/vertical_padding"
+        android:layout_marginTop="@dimen/large_margin"
+        android:background="@mipmap/ic_border"
+        android:lineSpacingExtra="@dimen/large_margin"
+        android:lineSpacingMultiplier="2.0"
+        android:text="@string/_9_png_background"
+        />
+
+</LinearLayout>

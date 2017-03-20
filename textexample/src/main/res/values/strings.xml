@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">textexample</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="link_phone">
+        <a href="tel:+86 0795-12345678">打电话</a>
+    </string>
+    <string name="the_border_textview">The Border TextView</string>
+    <string name="_9_png_background">.9 png background more ...............................................................</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--要获取焦点并且文本不能太短，否则跑不起来-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:text="跑马灯效果，首先需要获取到焦点，设置focusable和focusableInTouchMode都为true，其次文本内容不能太短，否则跑不动"/>
+
+    <TextView
+        android:id="@+id/marquee_tv_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="6"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarFadeDuration="2000"
+        android:layout_marginTop="@dimen/large_margin"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:text="垂直\n
+        滚动，\n
+        滚动条\n
+        不覆盖\n
+        文字\n
+        ，滚动\n
+        条从出现\n
+        到\n
+        消失的\n
+        时间为2000ms\n
+        的例子，\n
+        可以上下滚\n
+        动看\n
+        看效果\n
+        如何"/>
+</LinearLayout>

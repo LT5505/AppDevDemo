@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.liuting.textexample.HtmlTextActivity"
+    android:padding="@dimen/vertical_padding">
+
+    <!--用于显示不同颜色、字体、大小的文本-->
+    <TextView
+        android:id="@+id/html_tv_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <!--用于显示带URL、Email和电话号码的文本-->
+    <TextView
+        android:id="@+id/html_tv_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:autoLink="all"
+        android:layout_marginTop="@dimen/large_margin"/>
+
+    <!--用于显示表情的文本-->
+    <TextView
+        android:id="@+id/html_tv_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:autoLink="all"
+        android:layout_marginTop="@dimen/large_margin"/>
+
+    <!--用于显示url、电话的文本-->
+    <TextView
+        android:id="@+id/html_tv_str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/link_phone"
+        android:layout_marginTop="@dimen/large_margin"/>
+
+</LinearLayout>
