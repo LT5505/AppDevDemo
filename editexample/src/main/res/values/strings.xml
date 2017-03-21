@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EditExample</string>
+    <string name="insert_face">insert face</string>
+    <string name="send">Send</string>
+</resources>

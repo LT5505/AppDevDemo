@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:layout_below="@id/main_lv_msg"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--输入表情文本框-->
+            <EditText
+                android:id="@+id/main_edit_insert"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <!--表情图标-->
+            <ImageView
+                android:id="@+id/main_img_face"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_face"
+                android:layout_gravity="center"/>
+            <!--发送按钮-->
+            <Button
+                android:id="@+id/main_btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send"
+                android:textAllCaps="false"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <!--图片网格-->
+        <GridView
+            android:id="@+id/main_gv_face"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_margin"
+            android:numColumns="8"
+            android:visibility="gone"></GridView>
+    </LinearLayout>
+</LinearLayout>

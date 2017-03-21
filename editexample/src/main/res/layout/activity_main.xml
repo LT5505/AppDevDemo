@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.liuting.editexample.MainActivity">
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--&gt;-->
+
+    <include
+        android:id="@+id/layout_main_bottom"
+        layout="@layout/view_main_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"></include>
+
+    <ListView
+        android:id="@+id/main_lv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/layout_main_bottom"
+        android:divider="@null"
+        android:scrollbars="none"></ListView>
+
+
+    <!--插入表情按钮-->
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/insert_face"-->
+    <!--android:textAllCaps="false"-->
+    <!--android:onClick="onClick_InsertFace"/>-->
+    <!--用于显示发送出去的内容-->
+
+</RelativeLayout>
