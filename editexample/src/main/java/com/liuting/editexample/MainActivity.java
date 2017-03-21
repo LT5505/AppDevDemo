@@ -105,6 +105,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             //必须清空数据，list.add()方法下追加的是地址赋值，如果没有变化，会覆盖之前的数据
             editInsert.setText("");
             //滑到最底部，目前只对文字有用
+            //TODO: 滚动到底部的方法，目前只对文字有用，表情没有效果
             lvMsg.setSelection(ListView.FOCUS_DOWN);
         }
     }
