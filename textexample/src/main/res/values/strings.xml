@@ -6,4 +6,8 @@
     </string>
     <string name="the_border_textview">The Border TextView</string>
     <string name="_9_png_background">.9 png background more ...............................................................</string>
+    <string name="html_text">Html Text</string>
+    <string name="border_text">Border Text</string>
+    <string name="spanstring_text">SpanString Text</string>
+    <string name="marquee_text">Marquee Text</string>
 </resources>

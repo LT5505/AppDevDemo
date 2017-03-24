@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:myRoute="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/change_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--显示原图像-->
+        <ImageView
+            android:id="@+id/change_img_prototype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/pic_head" />
+
+        <!--显示原图像裁剪的部分区域-->
+        <ImageView
+            android:id="@+id/change_img_apart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.liuting.buttonexample.widget.RotationView
+            android:id="@+id/change_rotate_view"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            myRoute:det="10"
+            myRoute:pic="@mipmap/pic_head"
+            myRoute:startDegrees="0" />
+
+        <!--缩放比例-->
+        <SeekBar
+            android:id="@+id/change_sb_zoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+        <!--旋转角度-->
+        <SeekBar
+            android:id="@+id/change_sb_rotate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</ScrollView>

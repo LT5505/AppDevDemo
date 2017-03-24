@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ButtonExample</string>
+    <string name="change_width">Change Width</string>
+    <string name="image_text_button">Image Text Button</string>
+    <string name="sure">Sure</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="change_image">Change Image</string>
+</resources>

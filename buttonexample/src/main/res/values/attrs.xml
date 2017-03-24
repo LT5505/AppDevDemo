@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="myRoute">
+        <!--开始角度-->
+        <attr name="startDegrees" format="float"></attr>
+        <!--每张图片夹角-->
+        <attr name="det" format="float"></attr>
+        <!--旋转的图片-->
+        <attr name="pic" format="reference"></attr>
+    </declare-styleable>
+</resources>
