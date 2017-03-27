@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--设置小五角星风格-->
+    <RatingBar
+        android:id="@+id/rating_bar_small"
+        style="@style/evaluation_rtb_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="3"
+        android:rating="2"
+        android:layout_marginTop="@dimen/large_margin"
+        />
+
+    <!--设置指定五角星风格-->
+    <RatingBar
+        android:id="@+id/rating_bar_middle"
+        style="@style/evaluation_rating_rtb_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="0.5"/>
+
+    <!--显示分数-->
+    <TextView
+        android:id="@+id/rating_tv_goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_margin"/>
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BarExample</string>
+    <string name="increase">Increase</string>
+    <string name="reduce">Reduce</string>
+</resources>

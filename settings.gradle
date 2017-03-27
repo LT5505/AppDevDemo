@@ -1,1 +1,1 @@
-include ':app', ':drawcircle', ':lib', ':textexample', ':editexample', ':toolbardemo', ':buttonexample'
+include ':app', ':drawcircle', ':lib', ':textexample', ':editexample', ':toolbardemo', ':buttonexample', ':barexample'
