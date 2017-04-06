@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.liuting.xmldemo.MainActivity"
+    android:orientation="vertical">
+    <RadioGroup
+        android:id="@+id/main_rg_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/main_rb_pull"
+            style="@style/main_rbt_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/pull"
+             />
+
+        <RadioButton
+            android:id="@+id/main_rb_sax"
+            style="@style/main_rbt_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sax"
+             />
+
+        <RadioButton
+            android:id="@+id/main_rb_dom"
+            style="@style/main_rbt_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dom"
+             />
+    </RadioGroup>
+
+   <android.support.v4.view.ViewPager
+       android:id="@+id/main_vp_main"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:background="@color/white">
+   </android.support.v4.view.ViewPager>
+
+</LinearLayout>
