@@ -24,7 +24,15 @@
 ## 8. ToolbarDemo
 <p>Toolbar 的简单使用。</p>
 
-# 效果国
+# 效果图
 
+
+![效果图](https://github.com/LT5505/AppDevDemo/blob/master/editexample/screenhots/1.png?raw=true)
+
+![效果图 ](https://github.com/LT5505/AppDevDemo/blob/master/imageswitcher/Screenhots/1.png?raw=true)
+
+![效果图](https://github.com/LT5505/AppDevDemo/blob/master/parsedemo/Screenhots/1.png?raw=true)
+
+![效果图](https://github.com/LT5505/AppDevDemo/blob/master/buttonexample/Screenshot/Screenshot_1.png?raw=true)
 
 
