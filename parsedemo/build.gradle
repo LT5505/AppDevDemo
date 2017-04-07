@@ -19,6 +19,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -38,4 +39,9 @@ dependencies {
     compile files('libs/httpclient-4.3.1.jar')
     compile files('libs/httpcore-4.3.jar')
     compile files('libs/httpmime-4.3.1.jar')
+    compile('com.thoughtworks.xstream:xstream:1.4.7') {
+        exclude group: 'xmlpull', module: 'xmlpull'
+    }
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.alibaba:fastjson:1.2.31'
 }

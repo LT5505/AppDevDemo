@@ -11,8 +11,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.liuting.xmldemo.R;
+import com.liuting.xmldemo.bean.DataAppInfo;
 import com.liuting.xmldemo.bean.DataInfo;
 import com.liuting.xmldemo.utils.FileUtils;
+import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.io.xml.DomDriver;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -54,6 +57,7 @@ public class parseXMLFragment extends BaseFragment {
     public static final int PULL_PARSE_TYPE = 0;//pull方法解析
     public static final int SAX_PARSE_TYPE = 1;//SAX方法解析
     public static final int DOM_PARSE_TYPE = 2;//pull方法解析
+    public static final int XSTREAM_PARSE_TYPE = 3;//xstream 框架解析
     private List<DataInfo> list;
     // 标志位，标志已经初始化完成。
     private boolean isPrepared;
@@ -63,6 +67,7 @@ public class parseXMLFragment extends BaseFragment {
             switch (msg.what){
                 case PULL_PARSE_TYPE:
                 case SAX_PARSE_TYPE:
+                case XSTREAM_PARSE_TYPE:
                 case DOM_PARSE_TYPE:
                     StringBuffer stringBuffer = new StringBuffer();
                     for(int i = 0; i<list.size();i++){
@@ -134,9 +139,12 @@ public class parseXMLFragment extends BaseFragment {
                 parseXMLWithDOM(response);
                 handler.sendEmptyMessage(DOM_PARSE_TYPE);
                 break;
+            case XSTREAM_PARSE_TYPE:
+                parseXMLWithXstream(response);
+                handler.sendEmptyMessage(XSTREAM_PARSE_TYPE);
+                break;
         }
     }
-
 
     /**
      * 从网络获取数据
@@ -180,7 +188,8 @@ public class parseXMLFragment extends BaseFragment {
         if (!isPrepared || !isVisible) {
             return;
         } else {
-            doRequest();
+//            doRequest();
+            readLocalFile();
         }
     }
 
@@ -305,6 +314,16 @@ public class parseXMLFragment extends BaseFragment {
             }
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    private void parseXMLWithXstream(String xmlData){
+        XStream xStream = new XStream(new DomDriver("UTF-8"));
+        xStream.processAnnotations(DataAppInfo.class);
+        DataAppInfo dataAppInfo = new DataAppInfo();
+        dataAppInfo = (DataAppInfo)xStream.fromXML(xmlData);
+        for(DataInfo dataInfo:dataAppInfo.getApp()){
+            list.add(dataInfo);
         }
     }
 

@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.MainActivity">
+    <item
+        android:id="@+id/menu_item_xml"
+        android:orderInCategory="100"
+        android:title="parse XML"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_item_json"
+        android:orderInCategory="100"
+        android:title="parse Json"
+        app:showAsAction="never" />
+</menu>

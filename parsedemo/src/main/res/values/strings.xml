@@ -3,4 +3,8 @@
     <string name="pull">Pull</string>
     <string name="sax">SAX</string>
     <string name="dom">DOM</string>
+    <string name="xstream">XStream</string>
+    <string name="json">Json</string>
+    <string name="gson">Gson</string>
+    <string name="fastjson">FastJson</string>
 </resources>

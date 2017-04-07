@@ -6,7 +6,7 @@ import java.io.Serializable;
  * Package:com.liuting.xmldemo.bean
  * author:liuting
  * Date:2017/4/6
- * Desc:数据实体类
+ * Desc:app 信息实体类
  */
 
 public class DataInfo implements Serializable {
