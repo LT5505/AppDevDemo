@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">OKHttpExample</string>
+    <string name="get_a_url">Get a url</string>
+    <string name="post_to_a_server">Post to a server</string>
+    <string name="hello_world">Hello World!</string>
+</resources>
