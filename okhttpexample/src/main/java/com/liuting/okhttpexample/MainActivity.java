@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     /**
-     * get 方法获取数据
+     * Get 方法获取数据
      *
      * @param url url
      */
@@ -105,12 +105,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     /**
-     * post 方法获取数据
+     * Post 方法获取数据
      *
      * @param url     url
      * @param params  参数
      */
     private void initPostData(String url, String params) {
+        //需要自己新建一个 thread
 //        RequestBody body = RequestBody.create(JSON, params);
 //        Request request = new Request.Builder()
 //                .url(url)
@@ -129,6 +130,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //            message.obj = e.getMessage().toString();
 //            handler.sendMessage(message);
 //        }
+
+        //不需要自己新建 thread
         RequestBody body = RequestBody.create(JSON, params);
         Request request = new Request.Builder()
                 .url(url)
