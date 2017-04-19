@@ -1,6 +1,6 @@
 # AppDevDemo
 <p>平时测试的小例子</p>
-## 1. BarExample
+##  1. BarExample
 <p>包括ProgressBar、SeekBar以及RatingBar的事例。</p>
 
 ## 2. ButtonExample
@@ -24,6 +24,9 @@
 ## 8. ToolbarDemo
 <p>Toolbar 的简单使用。</p>
 
+## 9. SwipeRefreshLayout
+<p>SwipeRefreshLayout 和 RecyclerView 一起实现刷新列表的实例。</p>
+
 # 效果图
 
 
@@ -35,4 +38,4 @@
 
 ![效果图](https://github.com/LT5505/AppDevDemo/blob/master/buttonexample/Screenshot/Screenshot_1.png?raw=true)
 
-
+![效果图](https://github.com/LT5505/AppDevDemo/blob/master/swiperefreshlayout/Screenshots/loading.gif?raw=true)
