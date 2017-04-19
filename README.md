@@ -1,6 +1,7 @@
 # AppDevDemo
 <p>平时测试的小例子</p>
-##  1. BarExample
+
+## 1. BarExample
 <p>包括ProgressBar、SeekBar以及RatingBar的事例。</p>
 
 ## 2. ButtonExample
