@@ -10,4 +10,5 @@
     <string name="border_text">Border Text</string>
     <string name="spanstring_text">SpanString Text</string>
     <string name="marquee_text">Marquee Text</string>
+    <string name="the_view_for_adding_and_subtracting_number">The view for adding and subtracting number</string>
 </resources>

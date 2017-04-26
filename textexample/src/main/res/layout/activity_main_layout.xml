@@ -33,4 +33,12 @@
         android:text="@string/marquee_text"
         android:textAllCaps="false"/>
 
+    <Button
+        android:id="@+id/main_btn_add_sub_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/the_view_for_adding_and_subtracting_number"
+        android:textAllCaps="false"
+        android:singleLine="true"/>
+
 </LinearLayout>

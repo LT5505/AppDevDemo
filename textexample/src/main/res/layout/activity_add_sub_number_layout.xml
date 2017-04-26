@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <com.liuting.textexample.widget.AddSubNumberLayout
+        android:id="@+id/add_sub_number_layout_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:value="2"
+        app:maxValue="10"
+        app:minValue="2"
+        app:variation="2"
+        app:btnAddBackground="@android:color/white"
+        app:btnSubBackground="@android:color/white"
+        app:textViewBackground="@android:color/white"
+        app:textViewTextSize="16sp"
+        app:btnSubTextSize="22sp"
+        app:btnAddTextSize="22sp"
+        app:btnAddTextColor="@color/common_border_color"
+        app:btnSubTextColor="@color/common_border_color">
+
+    </com.liuting.textexample.widget.AddSubNumberLayout>
+</LinearLayout>

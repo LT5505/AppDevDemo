@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/layout_height"
+    android:background="@drawable/add_sub_number_selector"
+    android:padding="@dimen/border_width"
+    >
+    <Button
+        android:id="@+id/view_btn_add"
+        android:layout_width="@dimen/btn_add_width"
+        android:layout_height="match_parent"
+        android:text="+"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+    <View
+        android:layout_width="@dimen/border_width"
+        android:layout_height="match_parent"
+        android:background="@color/common_border_color"
+        android:gravity="center"
+        android:layout_gravity="center"></View>
+
+    <TextView
+        android:id="@+id/view_tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:minWidth="@dimen/tv_number_width"
+        />
+
+    <View
+        android:layout_width="@dimen/border_width"
+        android:layout_height="match_parent"
+        android:background="@color/common_border_color"
+        android:layout_gravity="center"
+        android:gravity="center"></View>
+
+    <Button
+        android:id="@+id/view_btn_sub"
+        android:layout_width="@dimen/btn_add_width"
+        android:layout_height="match_parent"
+        android:text="-"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

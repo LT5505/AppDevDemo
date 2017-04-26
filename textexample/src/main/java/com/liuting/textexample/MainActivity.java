@@ -19,6 +19,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     private Button btnBorder;//边框文本事例
     private Button btnSpan;//SpanString文本事例
     private Button btnMarquee;//跑马灯事例
+    private Button btnAddSubView;//增加减少数字控件实例
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -35,10 +36,12 @@ public class MainActivity extends Activity implements View.OnClickListener{
         btnBorder = (Button) findViewById(R.id.main_btn_border);
         btnSpan = (Button) findViewById(R.id.main_btn_span);
         btnMarquee = (Button) findViewById(R.id.main_btn_marquee);
+        btnAddSubView = (Button) findViewById(R.id.main_btn_add_sub_view);
         btnHtml.setOnClickListener(this);
         btnBorder.setOnClickListener(this);
         btnSpan.setOnClickListener(this);
         btnMarquee.setOnClickListener(this);
+        btnAddSubView.setOnClickListener(this);
     }
 
     @Override
@@ -59,6 +62,10 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 break;
             case R.id.main_btn_marquee:
                 intent= new Intent(MainActivity.this,MarqueeActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.main_btn_add_sub_view:
+                intent = new Intent(MainActivity.this,AddSubNumberActivity.class);
                 startActivity(intent);
                 break;
         }
