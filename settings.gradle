@@ -1,1 +1,1 @@
-include ':app', ':drawcircle', ':lib', ':textexample', ':editexample', ':toolbardemo', ':buttonexample', ':barexample', ':imageswitcher', ':parsedemo', ':okhttpexample', ':swiperefreshlayout'
+include ':app', ':drawcircle', ':lib', ':textexample', ':editexample', ':toolbardemo', ':buttonexample', ':barexample', ':imageswitcher', ':parsedemo', ':okhttpexample', ':swiperefreshlayout', ':sharepdemo'
