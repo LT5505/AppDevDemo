@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.liuting.editexample">
 
+    <uses-permission android:name="android.permission.REAL_GET_TASKS"></uses-permission>
     <application
         android:name=".MyApp"
         android:allowBackup="true"

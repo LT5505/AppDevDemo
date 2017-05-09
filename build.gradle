@@ -15,9 +15,9 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
-        maven {
-            url  "https://dl.bintray.com/ltina93/maven"
-        }
+//        maven {
+//            url  "https://dl.bintray.com/ltina93/maven"
+//        }
     }
 }
 
